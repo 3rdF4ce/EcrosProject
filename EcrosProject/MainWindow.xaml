@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EcrosProject"
         mc:Ignorable="d"
-        Title="Стартовое окно программно-аппаратного комплекса Экрос-XRD 5700" Height="595" Width="506" ShowInTaskbar="False" Foreground="White" FontWeight="Normal" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="/Pics/logo.bmp">
+        Title="Стартовое окно программно-аппаратного комплекса Экрос-XRD 5700" Height="600" Width="500" ShowInTaskbar="False" Foreground="White" FontWeight="Normal" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="/Pics/logo.bmp">
     <Grid Margin="0,0,0,-6" Visibility="Visible">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="192*"/>
-            <ColumnDefinition Width="61*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Canvas Grid.ColumnSpan="2">
+        <Canvas Grid.ColumnSpan="2" Margin="0,0,419,0">
             <Canvas.Background>
                 <ImageBrush/>
             </Canvas.Background>
@@ -33,7 +33,7 @@
                                 <ColumnDefinition Width="14*"/>
                                 <ColumnDefinition Width="3*"/>
                             </Grid.ColumnDefinitions>
-                            <Button Content="Режим поверки и тестирования" HorizontalAlignment="Center" Height="66" Margin="0,50,0,0" VerticalAlignment="Top" Width="258" Cursor="Hand" BorderBrush="#FF0E7012" FontWeight="Bold" FontSize="14" Grid.Column="1" Grid.Row="1" BorderThickness="1,1,1,1" FontFamily="Caladea" Foreground="#FF009B0F" Background="#FFEBFFF0"/>
+                            <Button Content="Режим поверки и тестирования" HorizontalAlignment="Center" Height="66" Margin="0,50,0,0" VerticalAlignment="Top" Width="258" Cursor="Hand" BorderBrush="#FF0E7012" FontWeight="Bold" FontSize="14" Grid.Column="1" Grid.Row="1" BorderThickness="1,1,1,1" FontFamily="Caladea" Foreground="#FF009B0F" Background="#FFEBFFF0" Click="Button_Click_1"/>
                             <Button Content="Режим поиска по базе данных" HorizontalAlignment="Center" Height="66" VerticalAlignment="Top" Width="258" Background="#FFEBFFF0" BorderBrush="#FF0E7012" FontWeight="Bold" FontSize="14" Cursor="Hand" Grid.Column="1" Margin="0,322,0,0" Grid.Row="1" BorderThickness="1,1,1,1" FontFamily="Caladea" Foreground="#FF009B0F"/>
                             <Button Content="Режим обработки" HorizontalAlignment="Center" Height="66" Margin="0,229,0,0" VerticalAlignment="Top" Width="258" Background="#FFEBFFF0" BorderBrush="#FF0E7012" FontWeight="Bold" FontSize="14" Cursor="Hand" Grid.Column="1" Grid.Row="1" BorderThickness="1,1,1,1" FontFamily="Caladea" Foreground="#FF009B0F"/>
                             <Button Content="Режим измерений" HorizontalAlignment="Center" Height="66" Margin="0,143,0,0" VerticalAlignment="Top" Width="258" Background="#FFEBFFF0" BorderBrush="#FF0E7012" FontWeight="Bold" FontSize="14" Cursor="Hand" Grid.Column="1" Grid.Row="1" BorderThickness="1,1,1,1" FontFamily="Caladea" Foreground="#FF009B0F"/>

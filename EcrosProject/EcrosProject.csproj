@@ -13,6 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="1530262685_1_mini7.jpg" />
+    <Resource Include="logo.bmp" />
     <Resource Include="Pics\1530262685_1_mini7.jpg" />
     <Resource Include="Pics\1587993175_8346.jpg" />
     <Resource Include="Pics\logo.bmp" />

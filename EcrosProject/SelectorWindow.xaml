@@ -1,0 +1,22 @@
+﻿<Window x:Class="EcrosProject.SelectorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EcrosProject"
+        mc:Ignorable="d"
+        Title="Стартовое окно программно-аппаратного комплекса Экрос-XRD 5700" Height="600" Width="500" WindowStyle="SingleBorderWindow" Icon="/logo.bmp" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,-16">
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image Margin="0,0,0,0" Source="/1530262685_1_mini7.jpg" Opacity="0.25"/>
+        <Button Content="Режим поверки" HorizontalAlignment="Left" Height="66" Margin="138,157,0,0" VerticalAlignment="Top" Width="258" Cursor="Hand" BorderBrush="#FF0E7012" FontWeight="Bold" FontSize="14" BorderThickness="1,1,1,1" FontFamily="Caladea" Foreground="#FF009B0F" Background="#FFEBFFF0"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="258" Background="#FFEBFFF0" BorderBrush="#FF0E7012" FontWeight="Bold" FontSize="14" Cursor="Hand" Margin="138,404,0,0" BorderThickness="1,1,1,1" FontFamily="Caladea" Foreground="#FF009B0F" Click="Button_Click"/>
+        <Button Content="Режим тестирования" HorizontalAlignment="Left" Height="66" Margin="138,250,0,0" VerticalAlignment="Top" Width="258" Background="#FFEBFFF0" BorderBrush="#FF0E7012" FontWeight="Bold" FontSize="14" Cursor="Hand" BorderThickness="1,1,1,1" FontFamily="Caladea" Foreground="#FF009B0F"/>
+        <Image HorizontalAlignment="Left" Width="226" Source="/Pics/1587993175_8346.jpg" Margin="154,9,0,501" Opacity="0.99"/>
+    </Grid>
+</Window>
