@@ -24,17 +24,5 @@ namespace EcrosProject
         {
             InitializeComponent();
         }
-
-       
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            SelectorWindow selectorWindow = new SelectorWindow();
-            selectorWindow.ViewModel = "ViewModel";
-            selectorWindow.Show();
-            //selectorWindow.ShowViewModel();
-            selectorWindow.Owner = this;
-            this.Hide();
-        }
     }
 }

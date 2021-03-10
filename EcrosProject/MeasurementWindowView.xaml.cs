@@ -9,31 +9,28 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using LiveCharts;
+using LiveCharts.Defaults; //Contains the already defined types
 namespace EcrosProject
 {
     /// <summary>
-    /// Interaction logic for SelectorWindow.xaml
+    /// Interaction logic for MeasurementWindow.xaml
     /// </summary>
-    public partial class SelectorWindow : Window
+    /// 
+   
+    public partial class MeasurementWindow : Window
     {
-
+       
         public string ViewModel { get; set; }
 
         public void ShowViewModel()
         {
-           MessageBox.Show(ViewModel);
+            MessageBox.Show(ViewModel);
         }
-
-        public SelectorWindow()
+        
+        public MeasurementWindow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Owner.Show();
-            this.Close();
-        }
-    }
+        } 
+     }
 }

@@ -7,14 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="1530262685_1_mini7.jpg" />
     <None Remove="1587993175_8346.jpg" />
-    <None Remove="logo.bmp" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="1530262685_1_mini7.jpg" />
-    <Resource Include="logo.bmp" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Pics\1530262685_1_mini7.jpg" />
     <Resource Include="Pics\1587993175_8346.jpg" />
     <Resource Include="Pics\logo.bmp" />
