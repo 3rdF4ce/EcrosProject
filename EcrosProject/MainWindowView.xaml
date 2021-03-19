@@ -31,8 +31,8 @@
                 Width="500"
                 Height="580"
                 Opacity="0.25"
-                Source="/Pics/1530262685_1_mini7.jpg"
-                Stretch="Fill" />
+                Source="/BackGround.jpg"
+                Stretch="Uniform" />
             <Canvas Canvas.Left="0" Canvas.Top="0">
                 <StackPanel
                     Canvas.Left="0"
@@ -43,9 +43,6 @@
                         Height="585"
                         Stretch="Fill">
                         <Grid Width="535" Height="604">
-                            <Grid.Background>
-                                <ImageBrush />
-                            </Grid.Background>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="104*" />
                                 <RowDefinition Height="438*" />

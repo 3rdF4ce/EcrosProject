@@ -2,12 +2,13 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="1587993175_8346.jpg" />
+    <None Remove="BackGround.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="BackGround.jpg" />
     <Resource Include="Pics\1530262685_1_mini7.jpg" />
     <Resource Include="Pics\1587993175_8346.jpg" />
     <Resource Include="Pics\logo.bmp" />
