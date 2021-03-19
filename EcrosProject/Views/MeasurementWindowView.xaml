@@ -5,7 +5,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:EcrosProject"
     xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:oxy="http://oxyplot.codeplex.com"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:oxy1="http://oxyplot.org/wpf"
     Title="Окно Измерений"
     Width="1365"
     Height="839"
@@ -27,21 +28,25 @@
             <ColumnDefinition Width="97*" />
         </Grid.ColumnDefinitions>
 
+        <oxy1:Plot 
+            Grid.Row="1"
+            Grid.Column="1"
+            Margin="5,5,5,5" x:Name="Plot1" Title="A Graph" >
+        </oxy1:Plot>
         <lvc:CartesianChart
             Grid.Row="1"
             Grid.Column="1"
             Margin="5,5,5,5"
             BorderBrush="Black"
-            LegendLocation="Bottom">
+            LegendLocation="Bottom" Visibility="Hidden">
             <lvc:CartesianChart.Series>
-                 <lvc:LineSeries 
-                        Title="{Binding Filename}"
-                        Fill="Transparent"
-                        PointGeometry="{x:Null}"
-                        StrokeThickness="3" 
-                        Values="{Binding Signal}"
-                 />
-             </lvc:CartesianChart.Series>
+                <lvc:LineSeries
+                    Title="{Binding Filename}"
+                    Fill="Transparent"
+                    PointGeometry="{x:Null}"
+                    StrokeThickness="3"
+                    Values="{Binding Signal}" />
+            </lvc:CartesianChart.Series>
         </lvc:CartesianChart>
         <StatusBar
             Grid.Row="1"
