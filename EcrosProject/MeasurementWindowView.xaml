@@ -9,34 +9,112 @@
     Title="Окно Измерений"
     Width="1365"
     Height="839"
-    ResizeMode="NoResize"
+    ResizeMode="CanResize"
     WindowStartupLocation="CenterScreen"
     mc:Ignorable="d">
+    <Window.DataContext>
+        <local:MeasurementWindowViewModel />
+    </Window.DataContext>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50*"/>
-            <RowDefinition Height="724*"/>
-            <RowDefinition Height="50
-*"/>
+            <RowDefinition Height="49.942" />
+            <RowDefinition />
+            <RowDefinition Height="50.006" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="18*"/>
-            <ColumnDefinition Width="340*"/>
-            <ColumnDefinition Width="97*"/>
+            <ColumnDefinition Width="54" />
+            <ColumnDefinition Width="340*" />
+            <ColumnDefinition Width="97*" />
         </Grid.ColumnDefinitions>
 
-        <lvc:CartesianChart LegendLocation="Right" Grid.Column="1" Grid.Row="1" Margin="5,5,5,5" BorderBrush="Black" >
+        <lvc:CartesianChart
+            Grid.Row="1"
+            Grid.Column="1"
+            Margin="5,5,5,5"
+            BorderBrush="Black"
+            LegendLocation="Bottom">
             <lvc:CartesianChart.Series>
-                <lvc:LineSeries PointGeometry="{x:Null}" Fill="Transparent"
-                            StrokeThickness="3" Title="Cos"
-                            Values="{Binding CPoints}" />
-                <lvc:LineSeries PointGeometry="{x:Null}" Fill="Transparent"
-                            StrokeThickness="3" Title="Sin"
-                            Values="{Binding SPoints}" />
-            </lvc:CartesianChart.Series>
+                 <lvc:LineSeries 
+                        Title="{Binding Filename}"
+                        Fill="Transparent"
+                        PointGeometry="{x:Null}"
+                        StrokeThickness="3" 
+                        Values="{Binding Signal}"
+                 />
+             </lvc:CartesianChart.Series>
         </lvc:CartesianChart>
-        <StatusBar Grid.Row="1" Grid.ColumnSpan="3" Margin="0,723,0,0" Grid.RowSpan="2"/>
-        <Border BorderThickness="1" BorderBrush="Black" Grid.Column="1" Grid.Row="1"/>
-        <Menu Grid.ColumnSpan="3" Margin="0,0,0,723" Grid.RowSpan="2" Background="#FFF0FFF2"/>
+        <StatusBar
+            Grid.Row="1"
+            Grid.RowSpan="2"
+            Grid.ColumnSpan="3"
+            Margin="0,723,0,0" />
+        <Border
+            Grid.Row="1"
+            Grid.Column="1"
+            BorderBrush="Black"
+            BorderThickness="1" />
+        <Menu
+            Grid.RowSpan="2"
+            Grid.ColumnSpan="3"
+            Margin="0,0,0,723"
+            Background="#FFF0FFF2" />
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="85*" />
+                <RowDefinition Height="85*" />
+                <RowDefinition Height="85*" />
+                <RowDefinition Height="85*" />
+                <RowDefinition Height="399*" />
+            </Grid.RowDefinitions>
+            <Button
+                Width="271"
+                Height="66"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Background="#FFEBFFF0"
+                BorderBrush="#FF0E7012"
+                Content="Настройки и установки"
+                FontWeight="Bold"
+                Foreground="#FF009B0F"
+                RenderTransformOrigin="-2.814,-0.496" />
+            <Button
+                Grid.Row="1"
+                Width="271"
+                Height="66"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Background="#FFEBFFF0"
+                BorderBrush="#FF0E7012"
+                Content="Проведение поверки и режим тестирования"
+                FontWeight="Bold"
+                Foreground="#FF009B0F"
+                RenderTransformOrigin="-2.814,-0.496" />
+            <Button
+                Grid.Row="2"
+                Width="271"
+                Height="66"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Background="#FFEBFFF0"
+                BorderBrush="#FF0E7012"
+                Command="{Binding ShowMeasurement}"
+                Content="Измерение"
+                FontWeight="Bold"
+                Foreground="#FF009B0F"
+                RenderTransformOrigin="-2.814,-0.496" />
+            <Button
+                Grid.Row="3"
+                Width="271"
+                Height="66"
+                Margin="0,10,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Background="#FFEBFFF0"
+                BorderBrush="#FF0E7012"
+                Content="Измерение с проведением количественного анализа"
+                FontWeight="Bold"
+                Foreground="#FF009B0F"
+                RenderTransformOrigin="-2.814,-0.496" />
+        </Grid>
     </Grid>
 </Window>
