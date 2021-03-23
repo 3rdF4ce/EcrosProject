@@ -5,7 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:user="clr-namespace:EcrosProject"
-    Title="Стартовое окно программно-аппаратного комплекса Экрос-XRD 5700"
+    Title="Стартовое окно программно-аппаратного комплекса Экрос-XRD 9500"
     Width="500"
     Height="600"
     FontWeight="Normal"
@@ -129,11 +129,20 @@
                                 Foreground="#FF009B0F" />
                             <Image
                                 Grid.Column="1"
-                                Width="226"
-                                Margin="0,27,0,30"
+                                Width="245"
+                                Margin="0,27,0,444"
                                 HorizontalAlignment="Center"
                                 Opacity="0.99"
-                                Source="/Pics/1587993175_8346.jpg" />
+                                Source="/Pics/1587993175_8346.jpg" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" >
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="0.064"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
                         </Grid>
                     </Viewbox>
                 </StackPanel>

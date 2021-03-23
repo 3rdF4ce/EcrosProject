@@ -19,7 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Pics\1530262685_1_mini7.jpg" />
     <Resource Include="Pics\1587993175_8346.jpg" />
     <Resource Include="Pics\BackGround.jpg" />
     <Resource Include="Pics\logo.bmp" />
